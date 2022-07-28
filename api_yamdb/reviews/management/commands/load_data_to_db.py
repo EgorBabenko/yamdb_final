@@ -1,17 +1,10 @@
 from django.core.management import BaseCommand
+from reviews.models import (Category, Comment, Genre, GenreTitle, Review,
+                            Title, User)
 
-from reviews.models import (User, Title, Category, Comment, Genre, GenreTitle,
-                            Review)
-from .load_data import (
-    load_data_users,
-    load_data_category,
-    load_data_genre,
-    load_data_title,
-    load_data_genre_title,
-    load_data_review,
-    load_data_comment
-)
-
+from .load_data import (load_data_category, load_data_comment, load_data_genre,
+                        load_data_genre_title, load_data_review,
+                        load_data_title, load_data_users)
 
 ALREDY_LOADED_ERROR_MESSAGE = """
 Если вам нужно перезагрузить дочерние данные из CSV-файла,

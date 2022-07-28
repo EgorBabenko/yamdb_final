@@ -1,7 +1,7 @@
 from csv import DictReader
 
-from reviews.models import (User, Category, Genre, Title, GenreTitle, Review,
-                            Comment)
+from reviews.models import (Category, Comment, Genre, GenreTitle, Review,
+                            Title, User)
 
 
 def load_data_users():
