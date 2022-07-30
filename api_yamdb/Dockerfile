@@ -5,6 +5,8 @@ WORKDIR /api_yamdb
 
 COPY requirements.txt .
 
+RUN ls
+
 RUN pip3 install -r requirements.txt --no-cache-dir
 
 COPY ./ .
