@@ -44,5 +44,6 @@ jobs:
       - name: Push to DockerHub
         uses: docker/build-push-action@v2
         with:
+          file: api_yamdb/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/infra:latest
