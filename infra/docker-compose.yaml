@@ -11,7 +11,7 @@ services:
       - ./.env
 
   web:
-    image: b4benkoeg/infra
+    image: b4benkoeg/api_yamdb:v1.08.2022
     restart: always
     volumes:
       - static_value:/api_yamdb/static/
@@ -25,7 +25,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx/default.conf:/etc/nginx/default.conf
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - static_value:/var/html/static/
     depends_on:
       - web
