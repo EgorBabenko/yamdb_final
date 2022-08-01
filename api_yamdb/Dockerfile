@@ -3,7 +3,7 @@ FROM python:3.7-slim
 WORKDIR /api_yamdb
 
 
-COPY ./ ./
+COPY /api_yamdb/ ./
 
 RUN pwd
 RUN ls
