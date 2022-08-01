@@ -1,6 +1,12 @@
 # Проект API YAMDB
+![example workflow](https://github.com/EgorBabenko/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 ## Общее описание
 Учебный проект api сервиса для публикации отзывов о произведениях разных жанров.
+
+##Ip адреса
+- http://51.250.111.195/api/v1/
+- http://51.250.111.195/admin/
+- http://51.250.111.195/redoc/
 ## Технологии:
 - Python 3.7
 - Django Rest Framework
